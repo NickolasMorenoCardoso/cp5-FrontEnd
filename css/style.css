@@ -2,45 +2,45 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9; /* Cor de fundo suave */
+  background-color: #f9f9f9; 
 }
 
 header {
-  background: linear-gradient(to right, #4d0950, #9c2a70); /* Gradiente de cor */
-  color: white; /* Cor do texto */
-  text-align: center; /* Centraliza o texto */
-  padding: 50px 20px; /* Espaçamento interno */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra do header */
+  background: linear-gradient(to right, #4d0950, #9c2a70); 
+  color: white; 
+  text-align: center; 
+  padding: 50px 20px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 header h1 {
-  font-size: 3em; /* Tamanho da fonte do título */
-  margin: 0; /* Remove a margem padrão */
-  letter-spacing: 2px; /* Espaçamento entre letras */
+  font-size: 3em; 
+  margin: 0; 
+  letter-spacing: 2px; 
 }
 
 header p {
-  font-size: 1.5em; /* Tamanho da fonte do subtítulo */
-  margin: 10px 0 0; /* Margens do parágrafo */
-  font-style: italic; /* Estilo itálico */
+  font-size: 1.5em; 
+  margin: 10px 0 0; 
+  font-style: italic; 
 }
 
 /* Estilo para o nav */
 nav {
-  background-color: #4d0950; /* Cor do fundo do nav */
-  text-align: center; /* Centraliza os itens do nav */
-  padding: 10px 0; /* Espaçamento interno do nav */
+  background-color: #4d0950; 
+  text-align: center; 
+  padding: 10px 0; 
 }
 
 nav ul {
-  list-style-type: none; /* Remove os marcadores da lista */
-  padding: 0; /* Remove o padding padrão */
-  margin: 0; /* Remove a margem padrão */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 nav ul li {
-  display: inline; /* Exibe os itens em linha */
-  margin: 0 20px; /* Margem entre os itens */
+  display: inline; 
+  margin: 0 20px; 
 }
 
 nav ul li a {
@@ -85,7 +85,7 @@ main section {
 }
 
 main section h2 {
-  color: #4d0950; /* Cor para títulos de seções */
+  color: #4d0950; 
 }
 
 main section p, main section ul {
@@ -99,23 +99,23 @@ ul {
 }
 
 .imagem-destaque {
-  max-width: 100%; /* A imagem não excederá a largura do contêiner */
-  height: auto; /* Mantém a proporção da imagem */
-  margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
-  border-radius: 10px; /* Bordas arredondadas */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar a imagem */
+  max-width: 100%; 
+  height: auto; 
+  margin: 20px 0; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 a {
-  background: linear-gradient(45deg, #811097, #fafafa); /* Gradiente azul para verde claro */
+  background: linear-gradient(45deg, #811097, #fafafa); 
   color: white;
   padding: 15px 30px;
   text-decoration: none;
-  border-radius: 30px; /* Bordas mais arredondadas */
+  border-radius: 30px; 
   font-weight: bold;
   font-size: 1.1em;
-  transition: background 0.3s ease, transform 0.3s ease; /* Transição suave */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  transition: background 0.3s ease, transform 0.3s ease; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 a:hover {
