@@ -1,190 +1,183 @@
-*{
-button:hover, form .btn-enviar input:hover{
-  box-shadow: 0px 0px 0px linear-gradient(#811097 #fff);
-  transform: scale(1.05);
-}
-}
-body {
-  font-family: 'Arial', sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 0;
+  margin: 0;
 }
 
 header {
-  background: linear-gradient(to right, #4d0950, #9c2a70); 
-  color: white; 
-  text-align: center; 
-  padding: 50px 20px; 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.logo {
+  width: 500px;
+  height: 330px;
+  object-fit: contain;
+}
+
+header {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 50vh; 
+  width: 100%; 
+  background-color: #aa23cf; 
+}
+
+
 header h1 {
-  font-size: 3em; 
-  margin: 0; 
-  letter-spacing: 2px; 
+  font-size: 2.5rem;
+  margin: 10px 0;
 }
 
 header p {
-  font-size: 1.5em; 
-  margin: 10px 0 0; 
-  font-style: italic; 
-}
-
-/* Estilo para o nav */
-nav {
-  background-color: #4d0950; 
-  text-align: center; 
-  padding: 10px 0; 
+  font-size: 1.2rem;
 }
 
 nav ul {
-  list-style-type: none; 
-  padding: 0; 
-  margin: 0; 
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #333;
 }
 
 nav ul li {
-  display: inline; 
-  margin: 0 20px; 
+  margin: 0 20px;
 }
 
 nav ul li a {
-  color: white; 
-  text-decoration: none; 
-  font-weight: bold; 
-  transition: color 0.3s; 
+  color: rgb(255, 250, 250);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-  color: #000; 
-}
-
-.btn, button {
-  background-color: #4d0950; 
-  color: white; 
-  padding: 15px 30px; 
-  border: none; 
-  border-radius: 25px; 
-  font-size: 1.2em; 
-  cursor: pointer; 
-  transition: background-color 0.3s, transform 0.2s; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-
-.btn:hover, button:hover {
-  background-color: #9c2a70; 
-  transform: translateY(-2px); 
+  color: #c149e6;
 }
 
 main {
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-main section {
+section {
   margin-bottom: 40px;
 }
 
-main section h2 {
-  color: #4d0950; 
-}
-
-main section p, main section ul {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d54ae2;
 }
 
 .imagem-destaque {
-  max-width: 100%; 
-  height: auto; 
-  margin: 20px 0; 
-  border-radius: 10px; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  width: 50%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
 }
 
-a {
-  display: inline-block; /* Adicionado para garantir que o padding funcione */
-  background: linear-gradient(45deg, #811097, #fafafa); 
-  color: white;
-  padding: 15px 30px;
+section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.btn {
+  background-color: #be4ae2;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 30px; 
-  font-weight: bold;
-  font-size: 1.1em;
-  transition: background 0.3s ease, transform 0.3s ease; 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  display: inline-block;
 }
 
-a:hover {
-  background: linear-gradient(45deg, #811087, #d1e2ec); 
-  transform: translateY(-5px); 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
-}
-
-a:active {
-  transform: translateY(0); 
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+.btn:hover {
+  background-color: #d532dd;
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  text-align: left;
-  padding: 20px;
+  background-color: #575656;
+  text-align: center;
+  margin-right: 8px;
+  color: #ffffff;
 }
 
-/* Para tablets e telas médias */
-@media (max-width: 1024px) {
-  header h1 {
-      font-size: 2em;
-  }
-  
-  nav ul li {
-      margin: 0 10px;
-  }
-
-  main {
-      padding: 15px;
-  }
-
-  a {
-      padding: 12px 25px;
-      font-size: 1em;
-  }
+footer .social-links ul li a {
+  display: flex;
+  align-items: center;
 }
 
-/* Para smartphones e telas pequenas */
+footer .social-links ul li a i {
+  margin-right: 5px;
+  color: rgb(206, 43, 170);
+}
+
+footer .social-links ul li a:hover i {
+  color: #000000;
+}
+
+.contact-info, .social-links, .privacy-policy {
+  margin: 20px 0;
+}
+
+.social-links ul {
+  list-style: none;
+  align-items: center;
+  padding: 5px;
+}
+
+.social-links ul li {
+  display: inline-flex;
+  margin: 0 10px;
+}
+
+.social-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.social-links ul li a:hover {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
-  nav ul li {
-      display: block;
-      margin: 10px 0;
+  header h1 {
+      font-size: 2rem;
+  }
+
+  .imagem-destaque {
+      width: 100%;
   }
 
   nav ul {
-      padding: 10px 0;
+      flex-direction: column;
   }
 
-  header h1 {
-      font-size: 1.8em;
-  }
-
-  header p {
-      font-size: 1em;
-  }
-
-  a {
-      padding: 10px 20px;
-      font-size: 0.9em;
-  }
-
-  footer {
-      padding: 15px;
-      font-size: 0.9em;
+  nav ul li {
+      margin: 10px 0;
   }
 }
 
@@ -204,7 +197,7 @@ form{
 
 form input, form textarea{
   width: 100%;
-  background: linear-gradient(45deg, #811087, #d1e2ec);
+  background: linear-gradient(45deg, #d532dd, #d1e2ec);
   border: 0;
   outline: 0;
   padding: 20px 15px;
@@ -234,16 +227,77 @@ form .btn-enviar{
 
 form .btn-enviar input{
   width: 120px;
-  background-color: #811087;
+  background-color: #d532dd;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
   transition: .2s;
 }
 
-section h2{
+h2 {
   text-align: center;
-  color: #4d0950;
+  color: #fffefe;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 40vh; 
+  }
+
+  .logo {
+    max-width: 80%; 
+
+  }
+}
+
+/* Seção Apresentação */
+#apresentacao {
+  padding: 60px;
+  background-color: #fff; /* Fundo branco */
+  text-align: center;
+  border-top: 5px solid #d532dd; /* Mantém as bordas do estilo anterior */
+  border-bottom: 5px solid #9c2a70; 
+}
+
+#apresentacao h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #d532dd; /* Cor do título */
+}
+
+#apresentacao ul {
+  list-style: none;
+  padding: 0;
+}
+
+#apresentacao ul li {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  background-color: #fff; /* Fundo branco para itens da lista */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#apresentacao ul li i {
+  font-size: 1.8em;
+  color: #d532dd; /* Cor do ícone */
+  margin-right: 15px;
+}
+
+#apresentacao ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#apresentacao ul li:hover i {
+  transform: scale(1.2);
+  color: #9c2a70; /* Cor do ícone ao passar o mouse */
+  transition: transform 0.2s ease-in-out, color 0.2s ease;
 }
 
 /* CARDS DE FUNCIONALIDADES */
@@ -278,7 +332,7 @@ section.container div.card img {
   width: 100%;
 }
 
-section.container h3 {
+section.container .card h3 {
   color: white;
 }
 
@@ -286,3 +340,47 @@ section.container h3 {
   transform: scale(1.05);
 }
 /* FIM CARDS DE FUNCIONALIDADES */
+
+/* inicio depoimentos */
+
+section.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section.container #depoimento  {
+  display: flex;
+  flex-direction: row;
+  background: #d7d7d7;
+  align-items: right;
+  font-family: poppins;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  max-height: 250px;
+  max-width: 520px;
+  box-shadow: 0px 2px 10px #333;
+  margin: 32px;
+  transition: transform 0.3s;
+}
+section.container #depoimento h3 {
+  text-align: left;
+}
+
+#depoimento, span {
+color: #6c6c6c;
+}
+
+#depoimento h3 {
+  color: #333;
+}
+
+div#depoimento div.icon {
+  width: 100px;
+  height: 100px;
+}
+section.container div#depoimento img {
+  width: 100%;
+}
+
+/* FIM Depoimentos */

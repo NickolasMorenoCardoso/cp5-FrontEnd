@@ -1,0 +1,45 @@
+// Variáveis para cores e tamanhos
+$primary-color: #4d0950;
+$secondary-color: #811097;
+$background-color: #f9f9f9;
+$icon-size: 2em;
+$text-size: 1.2em;
+
+#apresentacao {
+    padding: 40px;
+    background-color: $background-color;
+    text-align: center;
+
+    h2 {
+        color: $primary-color;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            font-size: $text-size;
+            color: $primary-color;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: $icon-size;
+                color: $secondary-color;
+                margin-right: 10px;
+            }
+
+            &:hover {
+                color: darken($primary-color, 10%);
+
+                i {
+                    transform: scale(1.1);
+                    transition: transform 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+}
